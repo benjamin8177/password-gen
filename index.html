@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator | Project 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <a href="../../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Bosh sahifaga</a>
+    
+    <div class="container">
+        <h1>Tasodifiy asotiyot Parol<br><span>Generatori</span></h1>
+        <div class="display">
+            <input type="text" id="password" placeholder="Parol shu yerda chiqadi" readonly>
+            <img src="https://cdn-icons-png.flaticon.com/512/1621/1621635.png" alt="copy" onclick="copyPassword()">
+        </div>
+        
+        <div class="controls">
+            <label>Uzunligi: <span id="length-val">12</span></label>
+            <input type="range" id="length" min="6" max="30" value="12" oninput="document.getElementById('length-val').innerText = this.value">
+        </div>
+
+        <button onclick="createPassword()"><i class="fas fa-bolt"></i> Parol Yaratish</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

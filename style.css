@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background: #002339;
+    color: #fff;
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.container {
+    margin: 10% auto;
+    width: 90%;
+    max-width: 500px;
+}
+
+.container h1 {
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.container h1 span {
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+    padding-bottom: 7px;
+}
+
+.display {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    border-radius: 5px;
+}
+
+.display img {
+    width: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.display img:hover {
+    transform: scale(1.1);
+}
+
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    width: 80%;
+}
+
+.controls {
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.controls label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.controls input[type="range"] {
+    width: 100%;
+    accent-color: #019f55;
+}
+
+.container button {
+    border: 0;
+    outline: 0;
+    background: #019f55;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 26px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.container button i {
+    margin-right: 10px;
+}
+
+.container button:hover {
+    background: #01b15e;
+}
